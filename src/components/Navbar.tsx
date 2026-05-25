@@ -56,7 +56,7 @@ export default function Navbar() {
         ))}
         <li>
           <Link
-            href="/buchen"
+            href="/kontakt"
             className={`font-sans text-xs tracking-widest uppercase rounded-full px-5 py-2 backdrop-blur-md border transition-all duration-300 ${
               scrolled
                 ? "text-text border-text/20 bg-text/5 hover:bg-text/10"
