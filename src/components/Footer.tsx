@@ -24,7 +24,7 @@ export default function Footer() {
             Navigation
           </p>
           <ul className="flex flex-col gap-3">
-            {["Atelier", "Leistungen", "Stories", "Journal"].map((item) => (
+            {["Atelier", "Leistungen", "Stories", "Journal", "Kontakt"].map((item) => (
               <li key={item}>
                 <Link
                   href={`/${item.toLowerCase()}`}
