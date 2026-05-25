@@ -3,6 +3,7 @@ import { Playfair_Display, Montserrat } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/lib/lenis";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import ScrollThread from "@/components/ScrollThread";
 
 const playfair = Playfair_Display({
@@ -37,6 +38,7 @@ export default function RootLayout({
         <Navbar />
         <SmoothScroll />
         {children}
+        <Footer />
       </body>
     </html>
   );
