@@ -3,6 +3,16 @@
 import Link from "next/link";
 import { siteConfig } from "@/lib/siteConfig";
 
+const navLinks = [
+  { label: "Start", href: "/" },
+  { label: "Dreads", href: "/dreads" },
+  { label: "Galerie", href: "/galerie" },
+  { label: "Dein Termin", href: "/termin" },
+  { label: "Kim", href: "/kim" },
+  { label: "Preise", href: "/preise" },
+  { label: "FAQ", href: "/faq" },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-dark text-background/40 px-8 md:px-24 py-20 border-t border-background/5">
@@ -24,13 +34,13 @@ export default function Footer() {
             Navigation
           </p>
           <ul className="flex flex-col gap-3">
-            {["Atelier", "Leistungen", "Stories", "Journal", "Kontakt"].map((item) => (
-              <li key={item}>
+            {navLinks.map((link) => (
+              <li key={link.href}>
                 <Link
-                  href={`/${item.toLowerCase()}`}
+                  href={link.href}
                   className="font-sans text-sm hover:text-background transition-colors duration-300"
                 >
-                  {item}
+                  {link.label}
                 </Link>
               </li>
             ))}
@@ -43,9 +53,10 @@ export default function Footer() {
             Kontakt
           </p>
           <ul className="flex flex-col gap-3 font-sans text-sm">
-            <li>{siteConfig.address.street}</li>
-            <li>{siteConfig.address.city}</li>
-            <li className="pt-2">
+            <li className="text-background/25 text-xs">
+              Termine nach Vereinbarung
+            </li>
+            <li className="pt-1">
               <a
                 href={`mailto:${siteConfig.contact.email}`}
                 className="hover:text-background transition-colors duration-300"

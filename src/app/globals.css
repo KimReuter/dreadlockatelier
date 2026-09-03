@@ -3,10 +3,10 @@
 
 @theme inline {
   --color-background: #FEF7EC;
-  --color-text: #1C1814;
+  --color-text: #4A5040;
   --color-sage: #999E8C;
   --color-brown: #645D46;
-  --color-dark: #0D0B09;
+  --color-dark: #6B7060;
 
   --font-serif: var(--font-playfair);
   --font-sans: var(--font-montserrat);

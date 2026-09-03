@@ -19,7 +19,7 @@ export default function Hero() {
         <motion.p
           initial={{ opacity: 0, letterSpacing: "0.2em" }}
           animate={{ opacity: 1, letterSpacing: "0.4em" }}
-          transition={{ duration: 2, ease: "easeOut" }}
+          transition={{ duration: 2, ease: "easeOut" as const }}
           className="font-sans text-xs uppercase text-background/50 mb-10"
         >
           Dreadlock Atelier
@@ -28,7 +28,7 @@ export default function Hero() {
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.6, delay: 0.5, ease: "easeOut" }}
+          transition={{ duration: 1.6, delay: 0.5, ease: "easeOut" as const }}
           className="font-serif text-5xl md:text-7xl lg:text-8xl text-background leading-tight max-w-4xl"
         >
           Luxury Dreadlocks
@@ -44,23 +44,14 @@ export default function Hero() {
         />
       </div>
 
-      <motion.div
+      <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 2.2 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 z-10"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 font-sans text-xs tracking-widest text-background/25 z-10"
       >
-        <span className="font-sans text-xs tracking-widest uppercase text-background/30">
-          Scroll
-        </span>
-        <div className="w-px h-12 bg-background/20 relative overflow-hidden">
-          <motion.div
-            className="absolute inset-x-0 top-0 h-full bg-background/60"
-            animate={{ y: ["0%", "100%"] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          />
-        </div>
-      </motion.div>
+        Dreadlock Atelier · Plauen
+      </motion.p>
     </section>
   );
 }

@@ -1,16 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function About() {
   return (
     <section className="grid md:grid-cols-2 min-h-screen">
-      <div className="relative bg-sage/15 min-h-80 md:min-h-full overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-background/30 to-transparent" />
-      </div>
-
       <motion.div
-        initial={{ opacity: 0, x: 30 }}
+        initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
@@ -34,6 +31,18 @@ export default function About() {
         </p>
         <div className="w-12 h-px bg-sage mt-14" />
       </motion.div>
+
+      <div className="relative bg-sage/15 min-h-80 md:min-h-full overflow-hidden">
+        <Image
+          src="/atelier/P2120517-fixed.JPG"
+          alt="Kim Reuter im Atelier"
+          fill
+          quality={90}
+            className="object-cover object-top"
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-background/30 to-transparent" />
+      </div>
     </section>
   );
 }

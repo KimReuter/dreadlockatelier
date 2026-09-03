@@ -1,19 +1,35 @@
 import Hero from "@/sections/Hero";
-import Manifesto from "@/sections/Manifesto";
-import Transformation from "@/sections/Transformation";
-import Experience from "@/sections/Experience";
-import About from "@/sections/About";
-import CTA from "@/sections/CTA";
+import Intro from "@/sections/Intro";
+import Atmosphere from "@/sections/Atmosphere";
+import KimSection from "@/sections/KimSection";
+import Doubts from "@/sections/Doubts";
+import DreadsForYou from "@/sections/DreadsForYou";
+import DreadGallery from "@/sections/DreadGallery";
+import DreadVision from "@/sections/DreadVision";
+import Testimonials from "@/sections/Testimonials";
+import AppointmentTimeline from "@/sections/AppointmentTimeline";
+import MeTime from "@/sections/MeTime";
+import SessionDuration from "@/sections/SessionDuration";
+import Preise from "@/sections/Preise";
+import Beratung from "@/sections/Beratung";
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <Manifesto />
-      <Transformation />
-      <Experience />
-      <About />
-      <CTA />
+      <Intro />
+      <Atmosphere />
+      <KimSection />
+      <Doubts />
+      <DreadsForYou />
+      <DreadGallery />
+      <DreadVision />
+      <Testimonials />
+      <AppointmentTimeline />
+      <MeTime />
+      <SessionDuration />
+      <Preise />
+      <Beratung />
     </main>
   );
 }

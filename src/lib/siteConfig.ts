@@ -11,15 +11,14 @@ export const siteConfig = {
   },
 
   address: {
-    street: "Musterstraße 1",
-    city: "08523 Plauen",
-    region: "Sachsen",
+    street: "Kirchstraße 4",
+    city: "07926 Gefell",
+    region: "Thüringen",
   },
 
   hours: [
-    { day: "Dienstag – Freitag", time: "08:00 – 17:00" },
-    { day: "Sonntag", time: "09:00 – 15:00" },
-    { day: "Montag & Samstag", time: "Geschlossen" },
+    { day: "Montag – Freitag", time: "09:00 – 18:00" },
+    { day: "Samstag & Sonntag", time: "Geschlossen" },
   ],
 
   legal: {
