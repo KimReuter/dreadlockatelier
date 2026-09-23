@@ -4,7 +4,6 @@ import Atmosphere from "@/sections/Atmosphere";
 import KimSection from "@/sections/KimSection";
 import Doubts from "@/sections/Doubts";
 import DreadsForYou from "@/sections/DreadsForYou";
-import DreadGallery from "@/sections/DreadGallery";
 import DreadVision from "@/sections/DreadVision";
 import Testimonials from "@/sections/Testimonials";
 import AppointmentTimeline from "@/sections/AppointmentTimeline";
@@ -12,6 +11,7 @@ import MeTime from "@/sections/MeTime";
 import SessionDuration from "@/sections/SessionDuration";
 import Preise from "@/sections/Preise";
 import Beratung from "@/sections/Beratung";
+import Closing from "@/sections/Closing";
 
 export default function Home() {
   return (
@@ -22,7 +22,6 @@ export default function Home() {
       <KimSection />
       <Doubts />
       <DreadsForYou />
-      <DreadGallery />
       <DreadVision />
       <Testimonials />
       <AppointmentTimeline />
@@ -30,6 +29,7 @@ export default function Home() {
       <SessionDuration />
       <Preise />
       <Beratung />
+      <Closing />
     </main>
   );
 }
