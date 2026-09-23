@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 const fade = (delay = 0) => ({
@@ -9,6 +10,16 @@ const fade = (delay = 0) => ({
   transition: { duration: 1, delay, ease: "easeOut" as const },
   viewport: { once: true },
 });
+
+const images = [
+  { src: "/galerie-1.jpg", alt: "Dreads — Kupferrot, halb hochgesteckt" },
+  { src: "/galerie-2.jpg", alt: "Dreads — Goldbraun, hochgesteckter Dutt" },
+  { src: "/galerie-3.jpg", alt: "Dreads — Goldbraun, offen von hinten" },
+  { src: "/galerie-4.jpg", alt: "Dreads — Blond, hochgesteckt" },
+  { src: "/galerie-5.jpg", alt: "Dreads — Nachtblau, Updo" },
+  { src: "/galerie-6.jpg", alt: "Dreads — Detailaufnahme" },
+  { src: "/galerie-7.jpg", alt: "Braids — Kundin im Atelier" },
+];
 
 export default function GaleriePage() {
   return (
@@ -30,8 +41,32 @@ export default function GaleriePage() {
         </motion.p>
       </section>
 
+      {/* Gallery Grid */}
+      <section className="bg-background px-8 md:px-16 py-24">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+          {images.map((img, i) => (
+            <motion.div
+              key={img.src}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, delay: i * 0.06, ease: "easeOut" as const }}
+              viewport={{ once: true }}
+              className="relative w-full aspect-[3/4] overflow-hidden"
+            >
+              <Image
+                src={img.src}
+                alt={img.alt}
+                fill
+                className="object-cover object-top hover:scale-105 transition-transform duration-700"
+                sizes="(max-width: 768px) 50vw, 33vw"
+              />
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
       {/* Pull Quote */}
-      <section className="bg-dark px-8 md:px-24 py-32 border-t border-background/5">
+      <section className="bg-dark px-8 md:px-24 py-32">
         <div className="max-w-2xl">
           <motion.p
             {...fade(0)}
