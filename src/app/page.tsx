@@ -1,3 +1,4 @@
+import ComingSoonPopup from "@/components/ComingSoonPopup";
 import Hero from "@/sections/Hero";
 import Intro from "@/sections/Intro";
 import Atmosphere from "@/sections/Atmosphere";
@@ -16,6 +17,7 @@ import Closing from "@/sections/Closing";
 export default function Home() {
   return (
     <main>
+      <ComingSoonPopup />
       <Hero />
       <Intro />
       <Atmosphere />

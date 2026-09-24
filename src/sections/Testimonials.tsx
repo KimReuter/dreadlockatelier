@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 const fade = (delay = 0) => ({
@@ -150,15 +151,21 @@ export default function Testimonials() {
             </Link>
           </motion.div>
 
-          {/* Rechts: Video */}
+          {/* Rechts: Bild */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.2 }}
             viewport={{ once: true }}
-            className="aspect-video bg-sage/10 flex items-center justify-center overflow-hidden"
+            className="aspect-video relative overflow-hidden"
           >
-            <p className="font-sans text-xs tracking-widest uppercase text-sage/30">Video folgt</p>
+            <Image
+              src="/testimonial-1.jpg"
+              alt="Kundin mit Dreads im Goldstunden-Licht"
+              fill
+              className="object-cover object-[center_30%]"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
           </motion.div>
 
         </div>
