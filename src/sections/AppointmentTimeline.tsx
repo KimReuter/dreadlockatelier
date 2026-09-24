@@ -53,7 +53,7 @@ const steps = [
 
 export default function AppointmentTimeline() {
   return (
-    <section className="px-8 md:px-24 py-32">
+    <section className="bg-dark px-8 md:px-24 py-32">
 
       {/* Header */}
       <motion.div
@@ -63,10 +63,10 @@ export default function AppointmentTimeline() {
         viewport={{ once: true }}
         className="flex flex-col items-center text-center mb-24"
       >
-        <h2 className="font-serif text-4xl md:text-5xl text-text leading-tight mb-4">
+        <h2 className="font-serif text-4xl md:text-5xl text-background leading-tight mb-4">
           Was passiert eigentlich bei deinem Termin?
         </h2>
-        <p className="font-serif text-xl md:text-2xl italic text-text/40 leading-tight">
+        <p className="font-serif text-xl md:text-2xl italic text-background/40 leading-tight">
           Von „Ich will Dreads" bis „Oh mein Gott, ich liebe sie."
         </p>
       </motion.div>
@@ -84,11 +84,11 @@ export default function AppointmentTimeline() {
           >
             {/* Nummer links */}
             <div className="text-right pr-5">
-              <p className="font-serif text-2xl md:text-3xl text-text/10 leading-none">{step.number}</p>
+              <p className="font-serif text-2xl md:text-3xl text-background/10 leading-none">{step.number}</p>
             </div>
 
             {/* Content rechts mit border-l Linie */}
-            <div className={`relative border-l border-text/15 pl-8 ${i < steps.length - 1 ? "pb-16" : "pb-0"}`}>
+            <div className={`relative border-l border-background/15 pl-8 ${i < steps.length - 1 ? "pb-16" : "pb-0"}`}>
               {/* Dot – sitzt genau am Anfang der Linie */}
               <div className="absolute -left-[7px] top-0 w-3.5 h-3.5 rounded-full bg-sage" />
 
@@ -98,23 +98,23 @@ export default function AppointmentTimeline() {
 
               <div className="flex flex-col gap-3">
                 {step.paragraphs.map((p) => (
-                  <p key={p} className="font-sans text-sm text-text/60 leading-loose">{p}</p>
+                  <p key={p} className="font-sans text-sm text-background/60 leading-loose">{p}</p>
                 ))}
 
                 {"punchlines" in step && step.punchlines && (
-                  <div className="flex flex-col gap-1 pl-4 border-l border-text/10 my-1">
+                  <div className="flex flex-col gap-1 pl-4 border-l border-background/10 my-1">
                     {step.punchlines.map((line) => (
-                      <p key={line} className="font-sans text-sm text-text/40 leading-relaxed">{line}</p>
+                      <p key={line} className="font-sans text-sm text-background/40 leading-relaxed">{line}</p>
                     ))}
                   </div>
                 )}
 
                 {"closing" in step && step.closing && (
-                  <p className="font-sans text-sm text-text/60 leading-loose">{step.closing}</p>
+                  <p className="font-sans text-sm text-background/60 leading-loose">{step.closing}</p>
                 )}
 
                 {"quote" in step && step.quote && (
-                  <p className="font-serif text-lg italic text-text/80 leading-snug mt-2">{step.quote}</p>
+                  <p className="font-serif text-lg italic text-background/80 leading-snug mt-2">{step.quote}</p>
                 )}
               </div>
             </div>
@@ -132,7 +132,7 @@ export default function AppointmentTimeline() {
       >
         <Link
           href="/termin"
-          className="font-sans text-xs tracking-[0.3em] uppercase text-text border border-text/20 px-10 py-4 hover:bg-text hover:text-background transition-all duration-500 inline-block"
+          className="font-sans text-xs tracking-[0.3em] uppercase text-background border border-background/20 px-10 py-4 hover:bg-background hover:text-dark transition-all duration-500 inline-block"
         >
           Ich will meinen Termin planen →
         </Link>

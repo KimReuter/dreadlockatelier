@@ -14,11 +14,19 @@ const fade = (delay = 0) => ({
 const images = [
   { src: "/galerie-1.jpg", alt: "Dreads — Kupferrot, halb hochgesteckt" },
   { src: "/galerie-2.jpg", alt: "Dreads — Goldbraun, hochgesteckter Dutt" },
-  { src: "/galerie-3.jpg", alt: "Dreads — Goldbraun, offen von hinten" },
   { src: "/galerie-4.jpg", alt: "Dreads — Blond, hochgesteckt" },
   { src: "/galerie-5.jpg", alt: "Dreads — Nachtblau, Updo" },
   { src: "/galerie-6.jpg", alt: "Dreads — Detailaufnahme" },
   { src: "/galerie-7.jpg", alt: "Braids — Kundin im Atelier" },
+  { src: "/galerie-3.jpg", alt: "Dreads — Goldbraun, offen von hinten" },
+  { src: "/galerie-8.jpg", alt: "Dreads — Grau/Silber, Fischgrätenzopf" },
+  { src: "/galerie-9.jpg", alt: "Dreads — Braun, Detail mit Schmuck" },
+  { src: "/galerie-10.jpg", alt: "Dreads — Partial, Mann von hinten" },
+  { src: "/galerie-11.jpg", alt: "Braids — Dunkel, von der Seite" },
+  { src: "/galerie-12.jpg", alt: "Dreads — Kupferrot, Pferdeschwanz" },
+  { src: "/galerie-13.jpg", alt: "Braids — Cornrows, von hinten" },
+  { src: "/galerie-14.jpg", alt: "Dreads — Dunkel, Atelier" },
+  { src: "/galerie-15.jpg", alt: "Dreads — Blond, zwei Zöpfe" },
 ];
 
 export default function GaleriePage() {

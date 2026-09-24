@@ -20,7 +20,7 @@ const questions = [
 
 export default function Beratung() {
   return (
-    <section className="py-32">
+    <section className="bg-dark py-32">
       <div className="md:grid md:grid-cols-2 md:items-stretch">
 
         {/* Text links */}
@@ -31,7 +31,7 @@ export default function Beratung() {
             <p className="font-sans text-xs tracking-[0.3em] uppercase text-sage">
               Noch unsicher?
             </p>
-            <h2 className="font-serif text-4xl md:text-5xl text-text leading-tight">
+            <h2 className="font-serif text-4xl md:text-5xl text-background leading-tight">
               Dann lass uns genau darüber sprechen.
             </h2>
           </motion.div>
@@ -45,7 +45,7 @@ export default function Beratung() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.7, delay: 0.2 + i * 0.08, ease: "easeOut" as const }}
                 viewport={{ once: true }}
-                className="font-sans text-sm text-text/55 leading-loose"
+                className="font-sans text-sm text-background/55 leading-loose"
               >
                 {q}
               </motion.p>
@@ -53,16 +53,16 @@ export default function Beratung() {
           </motion.div>
 
           {/* Statement */}
-          <motion.p {...fade(0.6)} className="font-serif text-xl md:text-2xl text-text leading-snug">
+          <motion.p {...fade(0.6)} className="font-serif text-xl md:text-2xl text-background leading-snug">
             Du musst dich nicht blind für Dreads entscheiden.
           </motion.p>
 
           {/* Aufforderung */}
           <motion.div {...fade(0.7)} className="flex flex-col gap-1">
             {["Schreib mir.", "Erzähl mir von deinen Haaren.", "Schick mir ein paar Fotos."].map((line) => (
-              <p key={line} className="font-sans text-sm text-text/60 leading-loose">{line}</p>
+              <p key={line} className="font-sans text-sm text-background/60 leading-loose">{line}</p>
             ))}
-            <p className="font-sans text-sm text-text/60 leading-loose mt-2">
+            <p className="font-sans text-sm text-background/60 leading-loose mt-2">
               Und wir schauen gemeinsam, was möglich ist.
             </p>
           </motion.div>
@@ -71,7 +71,7 @@ export default function Beratung() {
           <motion.div {...fade(0.8)}>
             <Link
               href="/kontakt"
-              className="font-sans text-xs tracking-[0.3em] uppercase text-text border border-text/20 px-10 py-4 hover:bg-text hover:text-background transition-all duration-500 inline-block"
+              className="font-sans text-xs tracking-[0.3em] uppercase text-background border border-background/20 px-10 py-4 hover:bg-background hover:text-dark transition-all duration-500 inline-block"
             >
               Beratung anfragen →
             </Link>

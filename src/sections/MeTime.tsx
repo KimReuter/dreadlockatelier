@@ -115,17 +115,17 @@ const perks: { Icon: () => JSX.Element; label: string; text: ReactNode }[] = [
 
 export default function MeTime() {
   return (
-    <section className="bg-dark px-8 md:px-24 py-32">
+    <section className="bg-background px-8 md:px-24 py-32">
 
       {/* Header */}
       <motion.div
         {...fade()}
         className="mb-20 flex flex-col items-center text-center"
       >
-        <h2 className="font-serif text-4xl md:text-5xl text-background leading-tight mb-6">
+        <h2 className="font-serif text-4xl md:text-5xl text-text leading-tight mb-6">
           Deine Session darf sich wie Me-Time anfühlen.
         </h2>
-        <p className="font-sans text-sm text-background/40 leading-loose">
+        <p className="font-sans text-sm text-text/40 leading-loose">
           Deshalb gibt&apos;s bei mir ein bisschen mehr als nur Haare.
         </p>
       </motion.div>
@@ -147,7 +147,7 @@ export default function MeTime() {
             <p className="font-sans text-xs tracking-[0.3em] uppercase text-sage">
               {perk.label}
             </p>
-            <p className="font-sans text-sm text-background/45 leading-loose">
+            <p className="font-sans text-sm text-text/45 leading-loose">
               {perk.text}
             </p>
           </motion.div>
@@ -157,12 +157,12 @@ export default function MeTime() {
       {/* Closing */}
       <motion.div
         {...fade(0.3)}
-        className="mt-24 pt-16 border-t border-background/10 flex flex-col items-center text-center gap-4"
+        className="mt-24 pt-16 border-t border-text/10 flex flex-col items-center text-center gap-4"
       >
         <p className="font-sans text-xs tracking-[0.3em] uppercase text-sage">
           Und das Wichtigste
         </p>
-        <p className="font-serif text-3xl md:text-4xl italic text-background leading-tight">
+        <p className="font-serif text-3xl md:text-4xl italic text-text leading-tight">
           Du darfst hier einfach du sein.
         </p>
       </motion.div>
