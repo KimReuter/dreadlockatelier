@@ -29,7 +29,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.6, delay: 0.5, ease: "easeOut" as const }}
-          className="font-serif text-5xl md:text-7xl lg:text-8xl text-background leading-tight max-w-4xl"
+          className="font-serif text-5xl md:text-7xl lg:text-8xl text-background leading-tight"
         >
           Luxury Dreadlocks
           <br />

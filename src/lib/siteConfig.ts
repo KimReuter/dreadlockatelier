@@ -1,6 +1,8 @@
 export const siteConfig = {
   name: "Dreadlock Atelier",
-  tagline: "Luxury Dreadlocks for wild souls.",
+  tagline: "Handgemachte Dreadlocks · individuelle Beratung ·",
+  tagline2: "persönliche Atmosphäre",
+  location: "Vogtland",
   owner: "Kim Reuter",
 
   contact: {

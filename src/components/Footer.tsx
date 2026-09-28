@@ -23,8 +23,11 @@ export default function Footer() {
           <p className="font-serif text-2xl text-background mb-4">
             {siteConfig.name}
           </p>
-          <p className="font-sans text-xs leading-relaxed">
-            {siteConfig.tagline}
+          <p className="font-sans text-xs leading-loose text-background/50">
+            {siteConfig.tagline}<br />{siteConfig.tagline2}
+          </p>
+          <p className="font-sans text-xs text-background/30 mt-1">
+            {siteConfig.location}
           </p>
         </div>
 

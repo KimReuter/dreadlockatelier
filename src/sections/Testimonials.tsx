@@ -69,6 +69,20 @@ export default function Testimonials() {
         </motion.p>
       </section>
 
+      {/* ②③ Stimmen — Glas-Overlay bis echte Zitate vorliegen */}
+      <div className="relative">
+        {/* Glas-Overlay */}
+        <div
+          className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 pointer-events-none"
+          style={{ backdropFilter: "blur(6px)", backgroundColor: "rgba(107, 112, 96, 0.35)" }}
+        >
+          <p className="font-sans text-xs tracking-[0.4em] uppercase text-background/60">Echte Stimmen</p>
+          <p className="font-serif text-2xl md:text-3xl italic text-background leading-tight text-center px-8">
+            Kommen bald.
+          </p>
+          <p className="font-sans text-xs text-background/40 tracking-wide">Ich warte noch auf ein paar gute Zitate. 🤍</p>
+        </div>
+
       {/* ② Hauptstimme */}
       <section className="bg-dark px-8 md:px-24 pb-24">
         <div className="grid md:grid-cols-5 gap-0 items-center">
@@ -129,6 +143,7 @@ export default function Testimonials() {
           ))}
         </div>
       </section>
+      </div>{/* Ende Glas-Overlay-Wrapper */}
 
       {/* ④⑤ Transformation + CTA */}
       <section className="bg-background px-8 md:px-24 py-32">

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Atmosphere() {
@@ -63,7 +64,7 @@ export default function Atmosphere() {
             Und wenn du nach drei Stunden feststellst, dass du eigentlich gerade einfach nur dasitzt und dem Kamin beim Knacken zuhörst – perfekt.<br />Genau dafür ist auch Platz.
           </p>
           <p>
-            Während deine Dreads entstehen, läuft Musik, der Kamin knistert und irgendwo steht wahrscheinlich gerade eine Tasse Kaffee herum. Du bekommst etwas zu trinken und bei längeren Sessions gibt es auch etwas Vegetarisches zu essen.
+            Während deine Dreads entstehen, läuft Musik, der Kamin knistert und irgendwo steht wahrscheinlich gerade ein Glas Tee herum. Du bekommst etwas zu trinken und bei längeren Sessions gibt es auch etwas Vegetarisches zu essen.
           </p>
           <p>
             Du darfst dich zurücklehnen.<br />
@@ -113,8 +114,14 @@ export default function Atmosphere() {
       </div>
 
       {/* Bild rechts — sticky, bis zum Rand */}
-      <div className="sticky top-0 h-screen bg-sage/10 overflow-hidden flex items-center justify-center">
-        <p className="font-sans text-xs tracking-widest uppercase text-sage/30">Bild folgt</p>
+      <div className="hidden md:block sticky top-0 h-screen overflow-hidden">
+        <Image
+          src="/kaffee.jpg"
+          alt="Tasse Kaffee im Atelier"
+          fill
+          className="object-cover object-center"
+          sizes="50vw"
+        />
       </div>
 
 

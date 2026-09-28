@@ -78,7 +78,7 @@ const perks: { Icon: () => JSX.Element; label: string; text: ReactNode }[] = [
   },
   {
     Icon: IconLeaf,
-    label: "Etwas zu essen",
+    label: "Vegetarisches Essen",
     text: <>Bei längeren Sessions gibt es etwas Vegetarisches.<br />Bei Unverträglichkeiten darfst du natürlich gerne selbst etwas mitbringen.</>,
   },
   {
@@ -94,7 +94,7 @@ const perks: { Icon: () => JSX.Element; label: string; text: ReactNode }[] = [
   {
     Icon: IconPlant,
     label: "Atmosphäre",
-    text: <>Pflanzen, Naturmaterialien, Kamin, Duft<br />und der Blick ins Grüne.</>,
+    text: <>Im Sommer sorgt eine Klimaanlage dafür, dass es angenehm bleibt.<br />Im Winter sorgt der Kamin für wohlige Wärme und Wohlfühlatmosphäre.</>,
   },
   {
     Icon: IconBook,

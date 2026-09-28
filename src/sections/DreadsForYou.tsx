@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const fade = (delay = 0) => ({
   initial: { opacity: 0, y: 16 },
@@ -21,38 +22,47 @@ const factors = [
 export default function DreadsForYou() {
   return (
     <>
-      {/* A — Philosophie */}
-      <section className="bg-dark px-8 md:px-24 py-32 flex flex-col items-center text-center">
-        <motion.h2 {...fade()} className="font-serif text-4xl md:text-6xl text-background leading-tight mb-6">
-          Dreads, die nach dir aussehen.
-        </motion.h2>
-        <motion.p {...fade(0.2)} className="font-serif text-2xl md:text-3xl text-background/30 italic leading-tight">
-          Nicht nach einer Vorlage.
-        </motion.p>
-      </section>
+      {/* A — Text links, Bild rechts */}
+      <section className="bg-dark grid md:grid-cols-2 gap-0 items-center">
 
-      {/* B — Bild mit Overlay */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1.2 }}
-        viewport={{ once: true }}
-        className="w-full h-[70vh] bg-dark relative overflow-hidden flex items-end"
-      >
-        <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/20 to-transparent" />
-        <p className="relative z-10 font-sans text-xs tracking-[0.3em] uppercase text-background/50 px-8 md:px-24 pb-10">
-          Keine zwei Köpfe sind gleich.
-        </p>
-        <p className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-sans text-xs tracking-widest uppercase text-sage/20 z-10">
-          Bild folgt
-        </p>
-      </motion.div>
+        {/* Text links */}
+        <div className="flex flex-col gap-6 px-8 md:px-24 py-32">
+          <motion.h2 {...fade()} className="font-serif text-4xl md:text-6xl text-background leading-tight">
+            Dreads, die nach dir aussehen.
+          </motion.h2>
+          <motion.p {...fade(0.2)} className="font-serif text-2xl md:text-3xl text-background/30 italic leading-tight">
+            Nicht nach einer Vorlage.
+          </motion.p>
+          <motion.p {...fade(0.35)} className="font-sans text-sm text-background/40 leading-loose mt-4">
+            Und wir planen deine Dreads so, dass sie zu dir,<br />deinen Haaren und deinem Alltag passen.
+          </motion.p>
+        </div>
+
+        {/* Bild rechts — mit Abstand oben/unten */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.2 }}
+          viewport={{ once: true }}
+          className="overflow-hidden py-16 md:py-24"
+        >
+          <Image
+            src="/dreads-fuer-dich.jpg"
+            alt="Dreads, die nach dir aussehen"
+            width={4284}
+            height={5712}
+            className="w-full h-auto"
+            sizes="(max-width: 768px) 100vw, 50vw"
+          />
+        </motion.div>
+
+      </section>
 
       {/* C — Schablone + Faktoren */}
       <section className="bg-dark px-8 md:px-24 py-32">
         <motion.h2
           {...fade()}
-          className="font-serif text-5xl md:text-7xl lg:text-8xl text-background leading-tight mb-6 max-w-4xl"
+          className="font-serif text-5xl md:text-7xl lg:text-8xl text-background leading-tight mb-6"
         >
           Dein Kopf ist keine Schablone.
         </motion.h2>
