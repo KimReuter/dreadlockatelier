@@ -45,7 +45,7 @@ export default function GaleriePage() {
           Jede Mähne<br />erzählt etwas anders.
         </motion.h1>
         <motion.p {...fade(0.2)} className="font-sans text-sm text-background/45 leading-loose max-w-lg">
-          Alle Dreads sind von mir — keine Referenzbilder, keine Werbefotos. Das hier ist echte Arbeit.
+          Alle Dreads sind von mir — keine Referenzbilder, keine Werbefotos.<br />Das hier ist echte Arbeit.
         </motion.p>
       </section>
 

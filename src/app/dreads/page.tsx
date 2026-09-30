@@ -214,7 +214,7 @@ export default function DreadsPage() {
                 Aber ehrlich gesagt: Es ist individuell.
               </p>
               <p className="font-sans text-sm text-text/55 leading-loose">
-                Manche Kund:innen fühlen gar keinen Schmerz. Andere wiederum merken an manchen Stellen schon, dass da etwas passiert. Das hängt von deiner Kopfhautempfindlichkeit ab, von deinem Haarstyp — und davon, wie du drauf bist an diesem Tag.
+                Manche Kund:innen fühlen gar keinen Schmerz. Andere wiederum merken an manchen Stellen schon, dass da etwas passiert. Das hängt von deiner Kopfhautempfindlichkeit ab, von deinem Haartyp — und davon, wie du drauf bist an diesem Tag.
               </p>
             </motion.div>
 
