@@ -25,6 +25,7 @@ export default function KontaktPage() {
     phone: "",
     service: "",
     message: searchParams.get("message") || "",
+    website: "",
   });
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
@@ -99,6 +100,17 @@ export default function KontaktPage() {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col gap-10">
+                {/* Honeypot — für Bots unsichtbar, echte Nutzer lassen es leer */}
+                <input
+                  type="text"
+                  name="website"
+                  value={form.website}
+                  onChange={handleChange}
+                  tabIndex={-1}
+                  autoComplete="off"
+                  aria-hidden="true"
+                  style={{ position: "absolute", opacity: 0, pointerEvents: "none", height: 0, width: 0 }}
+                />
 
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
