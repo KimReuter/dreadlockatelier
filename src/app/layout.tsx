@@ -22,8 +22,19 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Dreadlock Atelier",
-  description: "Premium Dreadlocks – natürlich, elegant, frei.",
+  title: {
+    default: "Dreadlock Atelier – Handgemachte Dreadlocks im Vogtland",
+    template: "%s | Dreadlock Atelier",
+  },
+  description: "Handgemachte Dreadlocks von Kim Reuter im Vogtland. Individuelle Beratung, persönliche Atmosphäre, echte Handarbeit. Jetzt Termin anfragen.",
+  keywords: ["Dreadlocks", "Dreads", "Dreadlock Atelier", "Vogtland", "handgemacht", "Kim Reuter", "Dreadlocks machen lassen"],
+  openGraph: {
+    type: "website",
+    locale: "de_DE",
+    siteName: "Dreadlock Atelier",
+    title: "Dreadlock Atelier – Handgemachte Dreadlocks im Vogtland",
+    description: "Handgemachte Dreadlocks von Kim Reuter im Vogtland. Individuelle Beratung, persönliche Atmosphäre, echte Handarbeit.",
+  },
 };
 
 export default function RootLayout({
