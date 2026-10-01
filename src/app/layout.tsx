@@ -11,12 +11,14 @@ const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
   style: ["normal", "italic"],
+  display: "swap",
 });
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
   weight: ["300", "400", "500"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
