@@ -6,7 +6,7 @@ export const siteConfig = {
   owner: "Kim Reuter",
 
   contact: {
-    email: "hallo@dreadlockatelier.de",
+    email: "dreadlockatelier@web.de",
     phone: "015562016990",
     instagram: "@dreadlockatelier",
     instagramUrl: "https://instagram.com/dreadlockatelier",
