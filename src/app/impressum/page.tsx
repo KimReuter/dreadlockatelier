@@ -40,7 +40,7 @@ export default function Impressum() {
           </Section>
 
           <Section label="Steuernummer">
-            <p>Steuernummer: [STEUERNUMMER EINTRAGEN]</p>
+            <p>Steuernummer: 165/261/03002</p>
             <p className="text-text/35 text-xs mt-1">
               Kleingewerbetreibende gemäß § 19 UStG — keine Umsatzsteuer-ID vorhanden.
             </p>
