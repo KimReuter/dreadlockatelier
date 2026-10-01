@@ -49,7 +49,7 @@ export default function KontaktPage() {
       });
       if (res.ok) {
         setStatus("success");
-        setForm({ name: "", email: "", phone: "", service: "", message: "" });
+        setForm({ name: "", email: "", phone: "", service: "", message: "", website: "" });
       } else {
         setStatus("error");
       }
