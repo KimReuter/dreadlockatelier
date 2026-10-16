@@ -331,7 +331,7 @@ export default function DreadsPage() {
             </div>
             <a
               href="#"
-              className="inline-flex items-center gap-4 border border-text/20 px-8 py-5 hover:bg-text hover:text-background transition-all duration-500 group self-start"
+              className="inline-flex items-center gap-4 border border-text/20 px-8 py-5 hover:bg-text hover:text-background transition-all duration-500 group self-center md:self-start"
             >
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5 text-sage group-hover:text-background transition-colors duration-500">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>

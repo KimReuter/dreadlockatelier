@@ -268,7 +268,7 @@ export default function TerminPage() {
               href="https://open.spotify.com/playlist/7mPreb0RRRWPxfyoDelVYG"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-sans text-xs tracking-[0.3em] uppercase text-text border border-text/20 px-10 py-4 hover:bg-text hover:text-background transition-all duration-500 inline-block self-start"
+              className="font-sans text-xs tracking-[0.3em] uppercase text-text border border-text/20 px-10 py-4 hover:bg-text hover:text-background transition-all duration-500 inline-block self-center md:self-start"
             >
               Playlist auf Spotify →
             </a>

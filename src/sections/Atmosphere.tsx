@@ -101,7 +101,7 @@ export default function Atmosphere() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
           viewport={{ once: true }}
-          className="mt-14"
+          className="mt-14 flex justify-center md:justify-start"
         >
           <Link
             href="/termin"

@@ -93,7 +93,7 @@ function KontaktContent() {
                 </p>
                 <button
                   onClick={() => setStatus("idle")}
-                  className="font-sans text-xs tracking-[0.3em] uppercase text-text border border-text/20 px-8 py-4 hover:bg-text hover:text-background transition-all duration-500 self-start"
+                  className="font-sans text-xs tracking-[0.3em] uppercase text-text border border-text/20 px-8 py-4 hover:bg-text hover:text-background transition-all duration-500 self-center md:self-start"
                 >
                   Neue Nachricht schreiben
                 </button>
@@ -191,7 +191,7 @@ function KontaktContent() {
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="font-sans text-xs tracking-[0.3em] uppercase text-text border border-text/20 px-10 py-5 hover:bg-text hover:text-background transition-all duration-500 self-start disabled:opacity-40 disabled:cursor-not-allowed"
+                  className="font-sans text-xs tracking-[0.3em] uppercase text-text border border-text/20 px-10 py-5 hover:bg-text hover:text-background transition-all duration-500 self-center md:self-start disabled:opacity-40 disabled:cursor-not-allowed"
                 >
                   {status === "sending" ? "Wird gesendet..." : "Nachricht senden →"}
                 </button>

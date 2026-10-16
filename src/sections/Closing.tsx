@@ -104,26 +104,26 @@ export default function Closing() {
               Vielleicht brauchst du nur eine Entscheidung.
             </p>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-8">
             <p className="font-sans text-xs tracking-[0.25em] uppercase text-sage/50">
               Eine kleine Nachricht. Ein:
             </p>
             <div className="relative max-w-sm">
               <div className="border border-text/15 rounded-xl p-6">
-                <p className="font-serif text-lg italic text-text leading-snug text-center">
-                  {`„Hey Kim. Ich glaube,`}<br />{`ich möchte das wirklich machen."`}
+                <p className="font-serif text-lg italic text-text leading-snug text-left">
+                  Hey Kim. Ich glaube,<br />ich möchte das wirklich machen.
                 </p>
               </div>
               <div className="absolute -bottom-[9px] left-8 w-4 h-4 bg-background border-r border-b border-text/15 rotate-45" />
             </div>
-            {/* Antwort-Sprechblase — rechts */}
+            {/* Antwort-Sprechblase — rechts, Marken-Grün */}
             <div className="relative max-w-sm self-end ml-auto mt-3">
-              <div className="border border-sage/30 rounded-xl p-6 bg-sage/5">
-                <p className="font-serif text-lg italic text-text leading-snug text-center">
-                  {`Okay, lass uns gemeinsam schauen,`}<br />{`wohin die Reise geht.`}
+              <div className="rounded-xl p-6 bg-sage">
+                <p className="font-serif text-lg italic text-background leading-snug text-left">
+                  Okay, lass uns gemeinsam schauen,<br />wohin die Reise geht.
                 </p>
               </div>
-              <div className="absolute -bottom-[9px] right-8 w-4 h-4 bg-background border-l border-b border-sage/30 -rotate-45" />
+              <div className="absolute -bottom-[9px] right-8 w-4 h-4 bg-sage -rotate-45" />
             </div>
           </div>
         </motion.div>
