@@ -35,7 +35,7 @@ export async function POST(req: NextRequest) {
 
     await resend.emails.send({
       from: "Dreadlock Atelier <onboarding@resend.dev>",
-      to: "kimbaerlyyo@web.de",
+      to: "dreadlockatelier@web.de",
       replyTo: email,
       subject: `Quiz-Anfrage von ${name}`,
       text: `Neue Beratungsanfrage über das Quiz.\n\nName: ${name}\nE-Mail: ${email}\n\n--- Dread-Profil ---\n${profile}\n\n${attachments.length} Foto(s) im Anhang.`,
