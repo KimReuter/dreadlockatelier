@@ -105,7 +105,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
-            className="fixed inset-0 z-40 bg-dark flex flex-col justify-center px-10"
+            className="fixed inset-0 z-40 bg-dark flex flex-col justify-center px-8"
           >
             <ul className="flex flex-col gap-8">
               {links.map((link, i) => (
