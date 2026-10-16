@@ -105,9 +105,9 @@ export default function Atmosphere() {
         >
           <Link
             href="/termin"
-            className="font-sans text-xs tracking-[0.3em] uppercase text-background border border-background/20 px-10 py-4 hover:bg-background hover:text-dark transition-all duration-500"
+            className="font-sans text-xs tracking-[0.15em] md:tracking-[0.3em] uppercase text-background border border-background/20 px-6 py-3 md:px-10 md:py-4 hover:bg-background hover:text-dark transition-all duration-500"
           >
-            Ich möchte die Atmosphäre erleben →
+            Die Atmosphäre erleben →
           </Link>
         </motion.div>
 

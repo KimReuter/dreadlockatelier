@@ -84,7 +84,7 @@ export default function KimSection() {
     <div>
 
       {/* ① + ② + ③ Portrait links, Text rechts */}
-      <section className="py-16 md:py-24 grid md:grid-cols-2 gap-0 items-center">
+      <section className="pb-16 md:py-24 grid md:grid-cols-2 gap-0 items-center">
 
           {/* Bild links — bis an den Rand, mit Abstand oben/unten */}
           <motion.div
@@ -106,7 +106,7 @@ export default function KimSection() {
           </motion.div>
 
           {/* Text rechts — Intro + Statement */}
-          <div className="flex flex-col gap-6 px-8 md:px-16">
+          <div className="flex flex-col gap-6 px-8 md:px-16 pt-8 md:pt-0">
             <motion.p {...fade()} className="font-sans text-xs tracking-[0.4em] uppercase text-sage">
               Erstmal: Hallo.
             </motion.p>
@@ -136,7 +136,7 @@ export default function KimSection() {
         <motion.p {...fade()} className="font-sans text-xs tracking-[0.3em] uppercase text-sage mb-16">
           Kim in 5 Bildern
         </motion.p>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
           {kimFacts.map((fact, i) => (
             <motion.div
               key={fact.label}
@@ -216,7 +216,7 @@ export default function KimSection() {
         <motion.div {...fade(0.2)}>
           <Link
             href="/kim"
-            className="font-sans text-xs tracking-[0.3em] uppercase text-text border border-text/20 px-10 py-4 hover:bg-text hover:text-background transition-all duration-500"
+            className="font-sans text-xs tracking-[0.15em] md:tracking-[0.3em] uppercase text-text border border-text/20 px-6 py-3 md:px-10 md:py-4 hover:bg-text hover:text-background transition-all duration-500"
           >
             Lern mich kennen →
           </Link>
