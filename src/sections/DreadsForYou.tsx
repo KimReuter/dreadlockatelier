@@ -78,7 +78,7 @@ export default function DreadsForYou() {
           className="grid grid-cols-1 md:grid-cols-3 border border-background/10 divide-y divide-background/10 md:[&>*:nth-child(3n+1)]:border-r md:[&>*:nth-child(3n+2)]:border-r"
         >
           {factors.map((f) => (
-            <div key={f.label} className="p-8 md:p-10 flex flex-col gap-3">
+            <div key={f.label} className="p-8 md:p-10 flex flex-col gap-3 items-center text-center md:items-start md:text-left">
               <p className="font-sans text-xs tracking-[0.35em] uppercase text-sage">{f.label}</p>
               <p className="font-sans text-sm text-background/50 leading-relaxed">{f.text}</p>
             </div>
