@@ -34,7 +34,7 @@ export default function Navbar() {
     <>
       <nav
         className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between px-8 md:px-24 py-6 transition-all duration-500 ${
-          scrolled ? "bg-background py-4 border-b border-text/5" : ""
+          menuOpen ? "bg-dark" : scrolled ? "bg-background py-4 border-b border-text/5" : ""
         }`}
       >
         {/* Logo */}
@@ -76,22 +76,22 @@ export default function Navbar() {
         {/* Mobile Hamburger */}
         <button
           onClick={() => setMenuOpen((v) => !v)}
-          className={`md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5 z-50 transition-colors duration-300 ${menuOpen ? "text-background" : textColor}`}
+          className={`md:hidden relative flex flex-col justify-center items-center w-8 h-8 z-50 transition-colors duration-300 ${menuOpen ? "text-background" : textColor}`}
           aria-label="Menü"
         >
           <span
-            className={`block w-6 h-px bg-current transition-all duration-300 origin-center ${
-              menuOpen ? "rotate-45 translate-y-[5px]" : ""
+            className={`absolute block w-5 h-px bg-current transition-all duration-500 ease-in-out origin-center ${
+              menuOpen ? "rotate-45" : "-translate-y-[5px]"
             }`}
           />
           <span
-            className={`block w-6 h-px bg-current transition-all duration-300 ${
-              menuOpen ? "opacity-0" : ""
+            className={`absolute block w-5 h-px bg-current transition-all duration-300 ease-in-out ${
+              menuOpen ? "opacity-0 scale-x-0" : "opacity-100"
             }`}
           />
           <span
-            className={`block w-6 h-px bg-current transition-all duration-300 origin-center ${
-              menuOpen ? "-rotate-45 -translate-y-[5px]" : ""
+            className={`absolute block w-5 h-px bg-current transition-all duration-500 ease-in-out origin-center ${
+              menuOpen ? "-rotate-45" : "translate-y-[5px]"
             }`}
           />
         </button>
