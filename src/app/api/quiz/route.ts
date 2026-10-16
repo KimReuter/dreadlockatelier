@@ -34,7 +34,7 @@ export async function POST(req: NextRequest) {
     );
 
     await resend.emails.send({
-      from: "quiz@dreadlockatelier.de",
+      from: "Dreadlock Atelier <onboarding@resend.dev>",
       to: "kimbaerlyyo@web.de",
       replyTo: email,
       subject: `Quiz-Anfrage von ${name}`,

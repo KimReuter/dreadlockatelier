@@ -78,7 +78,7 @@ function KontaktContent() {
       </section>
 
       {/* Formular + Kontakt */}
-      <section className="bg-background px-8 md:px-24 py-32">
+      <section className="bg-background px-10 md:px-24 py-32">
         <div className="grid md:grid-cols-[2fr_1fr] gap-16 md:gap-24 items-start">
 
           {/* Formular */}
