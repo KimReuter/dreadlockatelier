@@ -131,7 +131,7 @@ export default function MeTime() {
       </motion.div>
 
       {/* Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-14">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-x-8 gap-y-14">
         {perks.map((perk, i) => (
           <motion.div
             key={perk.label}

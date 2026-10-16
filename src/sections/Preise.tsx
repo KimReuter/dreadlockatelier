@@ -97,9 +97,9 @@ export default function Preise() {
           <motion.div {...fade(0.55)} className="pt-2">
             <Link
               href="/preise"
-              className="font-sans text-xs tracking-[0.3em] uppercase text-text border border-text/20 px-10 py-4 hover:bg-text hover:text-background transition-all duration-500 inline-block"
+              className="font-sans text-xs tracking-[0.15em] md:tracking-[0.3em] uppercase text-text border border-text/20 px-6 py-3 md:px-10 md:py-4 hover:bg-text hover:text-background transition-all duration-500 inline-block"
             >
-              Preise & Details anschauen →
+              Preise & Details →
             </Link>
           </motion.div>
 

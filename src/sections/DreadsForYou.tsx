@@ -44,7 +44,7 @@ export default function DreadsForYou() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
           viewport={{ once: true }}
-          className="overflow-hidden py-16 md:py-24"
+          className="overflow-hidden py-8 md:py-24"
         >
           <Image
             src="/dreads-fuer-dich.jpg"
@@ -75,7 +75,7 @@ export default function DreadsForYou() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: true }}
-          className="grid grid-cols-2 md:grid-cols-3 border border-background/10 divide-y divide-background/10 md:[&>*:nth-child(3n+1)]:border-r md:[&>*:nth-child(3n+2)]:border-r"
+          className="grid grid-cols-1 md:grid-cols-3 border border-background/10 divide-y divide-background/10 md:[&>*:nth-child(3n+1)]:border-r md:[&>*:nth-child(3n+2)]:border-r"
         >
           {factors.map((f) => (
             <div key={f.label} className="p-8 md:p-10 flex flex-col gap-3">

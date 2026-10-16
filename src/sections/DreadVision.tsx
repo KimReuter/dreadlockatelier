@@ -12,7 +12,7 @@ const fade = (delay = 0) => ({
 
 export default function DreadVision() {
   return (
-    <section className="bg-background px-8 md:px-24 py-32 flex flex-col items-center text-center">
+    <section className="bg-background px-8 md:px-24 py-16 md:py-32 flex flex-col items-center text-center">
       <motion.p {...fade()} className="font-sans text-sm text-text/40 leading-loose mb-20">
         Du weißt noch nicht, was zu dir passt?
       </motion.p>
@@ -36,7 +36,7 @@ export default function DreadVision() {
       <motion.div {...fade(0.5)}>
         <Link
           href="/quiz"
-          className="font-sans text-xs tracking-[0.3em] uppercase text-text border border-text/20 px-10 py-4 hover:bg-text hover:text-background transition-all duration-500 inline-block"
+          className="font-sans text-xs tracking-[0.15em] md:tracking-[0.3em] uppercase text-text border border-text/20 px-6 py-3 md:px-10 md:py-4 hover:bg-text hover:text-background transition-all duration-500 inline-block"
         >
           Quiz starten →
         </Link>

@@ -95,7 +95,7 @@ export default function Closing() {
         </div>
 
         {/* Rechts: Wende + Sprechblase */}
-        <motion.div {...fade(0.5)} className="flex flex-col gap-8 justify-center">
+        <motion.div {...fade(0.5)} className="flex flex-col gap-12 justify-center">
           <div className="flex flex-col gap-4">
             <p className="font-serif text-2xl md:text-3xl text-text/40 leading-snug">
               Vielleicht brauchst du gar keinen perfekten Zeitpunkt.
@@ -137,9 +137,9 @@ export default function Closing() {
         </p>
         <Link
           href="/termin"
-          className="font-sans text-xs tracking-[0.3em] uppercase text-text border border-text/20 px-10 py-4 hover:bg-text hover:text-background transition-all duration-500 inline-block"
+          className="font-sans text-xs tracking-[0.15em] md:tracking-[0.3em] uppercase text-text border border-text/20 px-6 py-3 md:px-10 md:py-4 hover:bg-text hover:text-background transition-all duration-500 inline-block"
         >
-          Meinen Termin anfragen →
+          Termin anfragen →
         </Link>
       </motion.div>
 
