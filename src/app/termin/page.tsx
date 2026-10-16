@@ -245,7 +245,7 @@ export default function TerminPage() {
               </p>
             </div>
             <p className="font-sans text-sm text-background/35 leading-loose">
-              Wenn du nach deiner Session nicht glücklich bist: Sag es mir. Aber bleib an dran an der Pflege. Das erste Jahr ist zu wichtig, um es zu ignorieren.
+              Wenn du nach deiner Session nicht glücklich bist: Sag es mir. Aber bleib dran an der Pflege. Das erste Jahr ist zu wichtig, um es zu ignorieren.
             </p>
           </motion.div>
 
