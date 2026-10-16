@@ -61,7 +61,7 @@ export default function PreisePage() {
         <motion.div {...fade(0)} className="mb-16">
           <p className="font-sans text-xs tracking-[0.3em] uppercase text-sage mb-6">Preisübersicht</p>
           <h2 className="font-serif text-4xl md:text-5xl text-background leading-tight">
-            Was was kostet.
+            Was kostet was.
           </h2>
         </motion.div>
 
