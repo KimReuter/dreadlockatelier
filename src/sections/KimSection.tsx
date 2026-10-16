@@ -12,7 +12,7 @@ const fade = (delay = 0) => ({
   viewport: { once: true },
 });
 
-const hairTypes = ["Superdünn", "Unglaublich dick", "Kurz", "Lang", "Gefärbt", "Lockig", "Bereits gedreadet", "Noch komplett unsicher"];
+const hairTypes = ["Kurz", "Lang", "Lockig", "Gefärbt", "Superdünn", "Unglaublich dick", "Bereits gedreadet", "Noch komplett unsicher"];
 
 const kimFacts = [
   { label: "Dreadstylistin.", text: "Handwerk mit Herzblut — jede Strähne mit Absicht.", img: "/kim-dreadstylistin.jpg" },
@@ -173,7 +173,7 @@ export default function KimSection() {
         <motion.p {...fade()} className="font-sans text-xs font-semibold tracking-[0.3em] uppercase text-sage mb-12 text-center">
           Deine Haare. Deine Vorstellung. Deine Dreads.
         </motion.p>
-        <div className="flex flex-col items-center gap-3 md:flex-row md:flex-wrap md:justify-center md:gap-x-8 md:gap-y-4">
+        <div className="flex flex-col items-center gap-3">
           {hairTypes.map((type, i) => (
             <motion.span
               key={type}
