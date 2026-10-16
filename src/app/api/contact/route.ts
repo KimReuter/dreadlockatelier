@@ -60,7 +60,7 @@ export async function POST(req: Request) {
 
   try {
     await resend.emails.send({
-      from: "Kontaktformular <onboarding@resend.dev>",
+      from: "Kontaktformular <kontakt@dreadlockatelier.com>",
       to: "dreadlockatelier@web.de",
       replyTo: email,
       subject: `Neue Anfrage von ${name}`,
