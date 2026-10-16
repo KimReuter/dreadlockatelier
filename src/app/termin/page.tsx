@@ -169,7 +169,7 @@ export default function TerminPage() {
                   </p>
                   <div className="flex flex-col md:flex-row md:flex-wrap gap-3 mt-2">
                     {["Massagestuhl mit Auflage", "Musik nach deinem Geschmack", "Essen & Trinken", "Kamin im Winter", "Gartenblick"].map((tag) => (
-                      <span key={tag} className="font-sans text-xs text-text/50 border border-text/10 px-4 py-2 rounded-full">{tag}</span>
+                      <span key={tag} className="font-sans text-xs text-text/50 border border-text/10 px-4 py-2 rounded-full text-center">{tag}</span>
                     ))}
                   </div>
                   <p className="font-sans text-sm text-text/55 leading-loose mt-2">
