@@ -146,7 +146,7 @@ export default function Testimonials() {
       </div>{/* Ende Glas-Overlay-Wrapper */}
 
       {/* ④⑤ Transformation + CTA */}
-      <section className="bg-background px-8 md:px-24 py-32">
+      <section className="bg-background px-8 md:px-24 pt-32 pb-0 md:py-32">
         <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
 
           {/* Links: Text */}
@@ -172,7 +172,7 @@ export default function Testimonials() {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 1.2 }}
             viewport={{ once: true }}
-            className="aspect-video relative overflow-hidden"
+            className="-mx-8 md:mx-0 aspect-video relative overflow-hidden"
           >
             <Image
               src="/testimonial-1.jpg"
