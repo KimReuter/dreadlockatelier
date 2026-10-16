@@ -190,7 +190,7 @@ export default function KimSection() {
       </section>
 
       {/* ⑦ Kleiner Bildstreifen */}
-      <div className="grid grid-cols-3 h-[77vh] overflow-hidden">
+      <div className="grid grid-cols-3 h-[40vw] md:h-[77vh] overflow-hidden">
         {[
           { src: "/kim-strip-1.jpg", alt: "Dreads — Detail" },
           { src: "/kim-strip-2.jpg", alt: "Kundin — Ergebnis" },

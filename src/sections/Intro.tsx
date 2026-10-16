@@ -11,7 +11,7 @@ export default function Intro() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.2 }}
         viewport={{ once: true }}
-        className="font-serif text-3xl md:text-5xl lg:text-6xl text-text leading-tight whitespace-nowrap mb-8"
+        className="font-serif text-3xl md:text-5xl lg:text-6xl text-text leading-tight mb-8"
       >
         Deine Dreads. Dein Stil. Deine Auszeit.
       </motion.h2>
@@ -23,10 +23,10 @@ export default function Intro() {
         viewport={{ once: true }}
         className="flex flex-col gap-4 font-sans text-sm text-text/50 leading-loose mb-12"
       >
-        <p className="whitespace-nowrap">
+        <p>
           Handgemachte Dreadlocks mit Liebe zum Detail – in entspannter, persönlicher Atmosphäre mitten im Grünen.
         </p>
-        <p className="whitespace-nowrap">
+        <p>
           Du möchtest Dreads, die nicht nur gut aussehen, sondern sich wirklich nach dir anfühlen?<br />
           Dann lass uns gemeinsam herausfinden, was zu deinen Haaren, deinem Stil und deinem Leben passt.
         </p>

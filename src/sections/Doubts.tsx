@@ -23,7 +23,7 @@ export default function Doubts() {
     <>
       {/* A — Dunkel: Eröffnung */}
       <section className="bg-dark px-8 md:px-24 py-32 flex flex-col items-center text-center">
-        <motion.p {...fade()} className="font-serif text-4xl md:text-5xl lg:text-6xl italic text-background leading-tight whitespace-nowrap mb-8">
+        <motion.p {...fade()} className="font-serif text-2xl md:text-5xl lg:text-6xl italic text-background leading-tight mb-8">
           „Aber passen Dreads überhaupt zu mir?"
         </motion.p>
         <motion.p {...fade(0.15)} className="font-sans text-sm text-background/50 leading-loose">

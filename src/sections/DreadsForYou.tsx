@@ -62,7 +62,7 @@ export default function DreadsForYou() {
       <section className="bg-dark px-8 md:px-24 py-32">
         <motion.h2
           {...fade()}
-          className="font-serif text-5xl md:text-7xl lg:text-8xl text-background leading-tight mb-6"
+          className="font-serif text-3xl md:text-7xl lg:text-8xl text-background leading-tight mb-6"
         >
           Dein Kopf ist keine Schablone.
         </motion.h2>

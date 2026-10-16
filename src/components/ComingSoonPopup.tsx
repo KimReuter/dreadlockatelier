@@ -40,7 +40,7 @@ export default function ComingSoonPopup() {
           ✕
         </button>
 
-        <div className="grid md:grid-cols-[2fr_3fr]" style={{ height: "680px" }}>
+        <div className="grid md:grid-cols-[2fr_3fr] h-[85vh] md:h-[680px] max-h-[90vh]">
 
           {/* Bild links */}
           <div className="hidden md:block relative overflow-hidden">
