@@ -103,7 +103,7 @@ export default function DreadsPage() {
                 viewport={{ once: true }}
                 className="bg-background p-8 flex flex-col gap-3"
               >
-                <p className="font-sans text-xs tracking-[0.25em] uppercase text-sage">
+                <p className="font-sans text-xs font-semibold tracking-[0.25em] uppercase text-sage">
                   {h.type}
                 </p>
                 <p className="font-sans text-sm text-text/60 leading-loose">
