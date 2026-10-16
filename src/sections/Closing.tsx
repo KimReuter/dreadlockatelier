@@ -133,7 +133,7 @@ export default function Closing() {
       {/* Finales Statement + CTA — zentriert */}
       <motion.div {...fade(0.8)} className="border-t border-text/8 pt-16 flex flex-col items-center text-center gap-8">
         <p className="font-serif text-2xl md:text-3xl text-text/65 leading-relaxed">
-          Deine Haare.&ensp;Deine Entscheidung.&ensp;Deine Dreads.
+          Deine Haare.<br />Deine Entscheidung.<br />Deine Dreads.
         </p>
         <Link
           href="/termin"
