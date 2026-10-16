@@ -51,7 +51,7 @@ export default function GaleriePage() {
 
       {/* Gallery Grid */}
       <section className="bg-background px-8 md:px-16 py-24">
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {images.map((img, i) => (
             <motion.div
               key={img.src}

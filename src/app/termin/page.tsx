@@ -167,7 +167,7 @@ export default function TerminPage() {
                   <p className="font-sans text-sm text-text/55 leading-loose">
                     Eine Session dauert im Schnitt 4 bis 8 Stunden — je nachdem was wir machen. Die Zeit gehört dir. Lies, arbeite, rede oder sei einfach still. Alles ist richtig.
                   </p>
-                  <div className="flex flex-wrap gap-3 mt-2">
+                  <div className="flex flex-col md:flex-row md:flex-wrap gap-3 mt-2">
                     {["Massagestuhl mit Auflage", "Musik nach deinem Geschmack", "Essen & Trinken", "Kamin im Winter", "Gartenblick"].map((tag) => (
                       <span key={tag} className="font-sans text-xs text-text/50 border border-text/10 px-4 py-2 rounded-full">{tag}</span>
                     ))}
