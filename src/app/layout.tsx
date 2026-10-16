@@ -37,6 +37,35 @@ export const metadata: Metadata = {
   },
 };
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Dreadlock Atelier",
+  "description": "Handgemachte Dreadlocks von Kim Reuter im Vogtland. Individuelle Beratung, persönliche Atmosphäre, echte Handarbeit.",
+  "url": "https://www.dreadlockatelier.com",
+  "telephone": "+4915562016990",
+  "email": "dreadlockatelier@web.de",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kirchstraße 4",
+    "addressLocality": "Gefell",
+    "postalCode": "07926",
+    "addressRegion": "Thüringen",
+    "addressCountry": "DE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "50.4333",
+    "longitude": "11.8500"
+  },
+  "image": "https://www.dreadlockatelier.com/logoMitSchrift.png",
+  "priceRange": "€€",
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00" }
+  ],
+  "sameAs": ["https://instagram.com/dreadlockatelier"]
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -47,6 +76,12 @@ export default function RootLayout({
       lang="de"
       className={`${playfair.variable} ${montserrat.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         <Navbar />
         <SmoothScroll />

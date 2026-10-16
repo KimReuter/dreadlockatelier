@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Über Kim",
-  description: "Kim Reuter — Dreadlock-Stylistin aus dem Vogtland. Handwerk, Leidenschaft und der Glaube, dass jede Mähne etwas erzählt.",
+  title: "Kim Reuter",
+  description: "Kim Reuter ist Dreadlock Stylistin im Vogtland. Hier erfährst du mehr über sie, ihre Arbeit und ihre Art zu arbeiten.",
 };
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  return children;
+  return <>{children}</>;
 }
