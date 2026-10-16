@@ -319,14 +319,34 @@ export default function QuizPage() {
       : answers.concerns.map((c) => concernOptions.find((o) => o.id === c)?.label).filter(Boolean).join(", ")
   }`;
 
+  const resizeImage = (file: File, maxPx = 1200): Promise<File> =>
+    new Promise((resolve) => {
+      const img = new Image();
+      const url = URL.createObjectURL(file);
+      img.onload = () => {
+        const scale = Math.min(1, maxPx / Math.max(img.width, img.height));
+        const canvas = document.createElement("canvas");
+        canvas.width = Math.round(img.width * scale);
+        canvas.height = Math.round(img.height * scale);
+        canvas.getContext("2d")!.drawImage(img, 0, 0, canvas.width, canvas.height);
+        URL.revokeObjectURL(url);
+        canvas.toBlob((blob) => {
+          resolve(blob ? new File([blob], file.name, { type: "image/jpeg" }) : file);
+        }, "image/jpeg", 0.82);
+      };
+      img.onerror = () => { URL.revokeObjectURL(url); resolve(file); };
+      img.src = url;
+    });
+
   const handleSend = async (e: React.FormEvent) => {
     e.preventDefault();
     setSendStatus("sending");
+    const resized = await Promise.all(photos.map((f) => resizeImage(f)));
     const fd = new FormData();
     fd.append("name", contactName);
     fd.append("email", contactEmail);
     fd.append("profile", profileText);
-    photos.forEach((f) => fd.append("photos", f));
+    resized.forEach((f) => fd.append("photos", f));
     try {
       const res = await fetch("/api/quiz", { method: "POST", body: fd });
       if (res.ok) {
