@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { siteConfig } from "@/lib/siteConfig";
 
@@ -17,7 +17,7 @@ const inputClass =
 
 const labelClass = "font-sans text-xs tracking-[0.25em] uppercase text-sage mb-2 block";
 
-export default function KontaktPage() {
+function KontaktContent() {
   const searchParams = useSearchParams();
   const [form, setForm] = useState({
     name: "",
@@ -249,5 +249,13 @@ export default function KontaktPage() {
       </section>
 
     </main>
+  );
+}
+
+export default function KontaktPage() {
+  return (
+    <Suspense fallback={<div className="bg-dark min-h-screen" />}>
+      <KontaktContent />
+    </Suspense>
   );
 }
