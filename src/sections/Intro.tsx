@@ -40,9 +40,9 @@ export default function Intro() {
       >
         <Link
           href="/termin"
-          className="font-sans text-xs tracking-[0.3em] uppercase text-text border border-text/20 px-10 py-4 hover:bg-text hover:text-background transition-all duration-500"
+          className="font-sans text-xs tracking-[0.15em] md:tracking-[0.3em] uppercase text-text border border-text/20 px-6 py-3 md:px-10 md:py-4 hover:bg-text hover:text-background transition-all duration-500"
         >
-          Deine Dreads beginnen hier →
+          Termin anfragen →
         </Link>
       </motion.div>
     </section>
